@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daribati — Participatory Tax & Civic Portal (Morocco)</title>
+    <meta
+      name="description"
+      content="Moroccan civic-tech and e-government participatory tax portal. Allocate your tax bill across 9 public service sectors, track live 3D funding progress, and vote on public construction tenders."
+    />
+    <meta property="og:title" content="Daribati — Participatory Tax & Civic Portal (Morocco)" />
+    <meta
+      property="og:description"
+      content="Allocate your Moroccan tax contribution across public services, earn your Verified Taxpayer badge, and vote on public tenders."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Public+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      (function () {
+        try {
+          var desc = Object.getOwnPropertyDescriptor(window, 'fetch');
+          if (desc && desc.get && !desc.set && desc.configurable) {
+            var patchedFetch = null;
+            Object.defineProperty(window, 'fetch', {
+              configurable: true,
+              enumerable: desc.enumerable,
+              get: function () {
+                return patchedFetch || desc.get.call(this);
+              },
+              set: function (fn) {
+                if (typeof fn === 'function') {
+                  patchedFetch = fn;
+                }
+              },
+            });
+          }
+        } catch (_err) {
+          // Ignore if window.fetch is non-configurable in the host environment.
+        }
+
+        window.addEventListener(
+          'error',
+          function (event) {
+            var src = (event && event.filename) || '';
+            if (
+              src.indexOf('chrome-extension://') === 0 ||
+              src.indexOf('moz-extension://') === 0
+            ) {
+              event.preventDefault();
+              event.stopImmediatePropagation();
+            }
+          },
+          true
+        );
+      })();
+    </script>
+  </head>
+  <body class="bg-[#F4F7FA] text-[#0F2942] antialiased selection:bg-[#087E83]/20 selection:text-[#0F2942]">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

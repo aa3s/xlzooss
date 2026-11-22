@@ -1,0 +1,6 @@
+{
+  "name": "Daribati — Participatory Tax & Civic Portal",
+  "description": "Moroccan civic-tech and e-government participatory tax platform featuring live 3D liquid sector funding tanks, sub-sector tax allocation, verified taxpayer badges, and weighted citizen voting on public tenders.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
